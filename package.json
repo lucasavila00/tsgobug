@@ -1,0 +1,12 @@
+{
+	"name": "tsgobug",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"reproduce": "node ./reproduce.mjs"
+	},
+	"dependencies": {
+		"@typescript/native-preview": "7.0.0-dev.20260524.1"
+	}
+}
