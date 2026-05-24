@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"reproduce": "node ./reproduce-go",
+		"reproduce": "node ./reproduce-go.mjs",
 		"reproduce:ts": "node ./reproduce-ts.mjs"
 	},
 	"dependencies": {
