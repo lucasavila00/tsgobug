@@ -4,9 +4,11 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"reproduce": "node ./reproduce.mjs"
+		"reproduce": "node ./reproduce-go",
+		"reproduce:ts": "node ./reproduce-ts.mjs"
 	},
 	"dependencies": {
-		"@typescript/native-preview": "7.0.0-dev.20260524.1"
+		"@typescript/native-preview": "7.0.0-dev.20260524.1",
+		"typescript": "6.0.3"
 	}
 }

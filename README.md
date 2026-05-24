@@ -9,13 +9,23 @@ the callable function type instead of the call result type.
 ```sh
 npm install
 npm run reproduce
+npm run reproduce:ts
 ```
 
-Expected current output:
+Expected current tsgo output:
 
 ```txt
 this.#buildCapabilities()
   checker.getTypeAtLocation(callExpression): () => Result
+  checker.getTypeAtLocation(callExpression.expression): () => Result
+  checker.getReturnTypeOfSignature(signature): Result
+```
+
+Expected regular TypeScript output:
+
+```txt
+this.#buildCapabilities()
+  checker.getTypeAtLocation(callExpression): Result
   checker.getTypeAtLocation(callExpression.expression): () => Result
   checker.getReturnTypeOfSignature(signature): Result
 ```
